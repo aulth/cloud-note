@@ -55,6 +55,7 @@ const Notes = () => {
     }
     useEffect(() => {
       if(isLogin){
+          setIsLogin(true)
           fetchNotes()
       }else{
           navigate('/login')

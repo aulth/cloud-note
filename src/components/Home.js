@@ -7,6 +7,7 @@ const Home = () => {
     const [isLogin, setIsLogin] = useState(localStorage.getItem('auth-token')?true:false);
     useEffect(() => {
       if(isLogin){
+        setIsLogin(true)
           navigate('/notes')
       }
       //eslint-disable-next-line
